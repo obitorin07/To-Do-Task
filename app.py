@@ -75,7 +75,7 @@ st.markdown("""
 
 # ---------- Header Image and Title ----------
 st.image("C:/Users/kiran/OneDrive/Desktop/TO-DO-TASK-Python/kid.jpg", use_container_width=True, caption="Stay Focused!")
-st.title("Kira Daily Learning Progress")
+st.title("Daily Progress Tracker")
 
 # ---------- Define Today's Date ----------
 today_date = datetime.datetime.now().date()
