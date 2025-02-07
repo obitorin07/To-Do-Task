@@ -22,5 +22,7 @@ This is a simple daily to-do list app to track your tasks and progress. It autom
    password='password'
    ```
 
-3. **Install Dependencies:**
+3. **Install dependencies:**
 ``` pip install streamlit mysql-connector-python python-dotenv ```
+
+**Thank you :)**
