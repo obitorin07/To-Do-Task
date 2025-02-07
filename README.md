@@ -14,7 +14,7 @@ This is a simple daily to-do list app to track your tasks and progress. It autom
    Run the provided `database.sql` to create the `to_do_task` database and necessary tables.
 
 2. **Environment Variables:**  
-   Create a file named `credentials.env` in the project root with the following dummy information:
+   Create a file named `credentials.env` in the project root with the following dummy information(replace with actual information):
    ```env
    host='localhost'
    database='database_name'
