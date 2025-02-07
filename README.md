@@ -25,4 +25,7 @@ This is a simple daily to-do list app to track your tasks and progress. It autom
 3. **Install dependencies:**
 ``` pip install streamlit mysql-connector-python python-dotenv ```
 
+4. ** How to run? :**
+``` Open Terminal and just type :- streamlit run app.py ```
+
 **Thank you :)**
