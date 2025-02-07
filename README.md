@@ -28,6 +28,6 @@ This is a simple daily to-do list app to track your tasks and progress. It autom
 4. **How to run? :**
 ``` Open Terminal and just type :- streamlit run app.py ```
 
-![Screenshot](https://github.com/user-attachments/assets/5a386878-1874-4d08-a396-91e1ff7cacc6)
+![Screenshot](https://github.com/user-attachments/assets/67a8ef2d-f6cc-47f8-824b-2fed1d9d7661)
 
 **Thank you :)**
