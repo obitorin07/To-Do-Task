@@ -20,3 +20,7 @@ This is a simple daily to-do list app to track your tasks and progress. It autom
    database='database_name'
    user='username'
    password='password'
+   ```
+
+3. **Install dependencies**
+``` pip install streamlit mysql-connector-python python-dotenv ```
