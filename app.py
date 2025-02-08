@@ -43,6 +43,7 @@ def run_query(query, params=None):
 # ---------- Initialize Connection ----------
 conn = get_connection()
 cursor = conn.cursor()
+st.set_page_config(page_title="Kira - Daily Progress Tracker", page_icon="kira_logo.png")  
 
 st.markdown("""
     <style>
