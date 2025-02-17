@@ -79,7 +79,8 @@ st.image("C:/Users/kiran/OneDrive/Desktop/TO-DO-TASK-Python/kid.jpg", use_contai
 st.title("Daily Progress Tracker")
 
 # ---------- Define Today's Date ----------
-today_date = datetime.datetime.now().date()
+# today_date = datetime.datetime.now().date()
+today_date = datetime.date.today() 
 today_day_name = today_date.strftime("%A")
 
 # ---------- STEP 1: Fill in Missing Log Entries for Missed Days ----------
@@ -109,6 +110,9 @@ for missing_date in missing_days:
 total_tasks = run_query("SELECT COUNT(*) FROM tasks WHERE is_active = TRUE").fetchone()[0]
 completed_today = run_query("SELECT COUNT(*) FROM task_logs WHERE task_date = %s AND is_completed = 1", (today_date,)).fetchone()[0]
 
+target_date = datetime.date(2026,1,1)
+days_left =  (target_date -  today_date).days
+
 col_stat1, col_stat2 = st.columns(2)
 with col_stat1:
     st.write(f"**📅 Date:** {today_date}")
@@ -116,6 +120,8 @@ with col_stat1:
 with col_stat2:
     st.write(f"**✅ Total Tasks:** {total_tasks}")
     st.write(f"**🏆 Tasks Completed Today:** {completed_today}")
+st.write(f"💀**Only {days_left} days remain until 2026**")
+
 
 # ---------- STEP 3: New Task Input ----------
 new_task = st.text_input("✍️ Enter new task:")
